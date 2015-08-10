@@ -11,8 +11,8 @@
   "author": "derek moore",
   "license": "MIT",
   "devDependencies": {
-    "brink-sass": "^0.1.17"
+    "brink-sass": "^0.1.17",
+    "browser-sync": "^2.8.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
