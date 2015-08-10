@@ -19,3 +19,9 @@ requirejs.config({
 		'Backbone': ['underscore', 'jquery']
 		# 'BRoutefilter': ['Backbone']
 	})
+
+require(['appIndex'], (app)->
+
+	console.log('appIndex ran!')
+
+	)

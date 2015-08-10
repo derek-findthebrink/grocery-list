@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cd www && browser-sync start --server --files '**/*.html, **/*.js, **/*.css'",
-    "sass": "sass -wc dev/sass/index.sass:www/css/index.css"
+    "sass": "sass -wc dev/sass/index.sass:www/css/index.css",
+    "coffee": "coffee -w -o www/js/ dev/coffee/"
   },
   "author": "derek moore",
   "license": "MIT",
