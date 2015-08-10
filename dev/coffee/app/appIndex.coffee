@@ -1,25 +1,34 @@
-requirejs.config({
+require.config({
 	paths:
-		app: "/js/app/"
+		app: "."
 
-		jquery: '/js/lib/jquery/dist/jquery.min'
-		Backbone: '/js/lib/backbone/backbone-min'
-		underscore: '/js/lib/underscore/underscore-min'
-		jadeRuntime: '/js/lib/jadeRuntime'
-		firebase: '/js/lib/firebase/firebase'
-		BFire: '/js/lib/backbonefire/dist/backbonefire'
+		jquery: '../lib/jquery/dist/jquery.min'
+		Backbone: '../lib/backbone/backbone-min'
+		underscore: '../lib/underscore/underscore-min'
+		jadeRuntime: '../lib/jadeRuntime'
+		firebase: '../lib/firebase/firebase'
+		BFire: '../lib/backbonefire/dist/backbonefire'
 		# BRoutefilter: '/js/lib/routefilter/dist/backbone.routefilter.min.js'
 
-		collections: 'js/app/collections'
-		models: '/js/app/models'
-		views: '/js/app/views'
-		templates: '/js/app/templates'
+		collections: './collections'
+		models: './models'
+		views: './views'
+		templates: './templates'
 		# data: '/js/data'
 		# ui: '/js/brink-ui'
-	deps: ['jquery', 'underscore', 'Backbone']
+	waitSeconds: 0
 	shim: 
-		'Backbone': ['underscore', 'jquery']
+		'Backbone': 
+			deps: ['underscore', 'jquery']
+			exports: "Backbone"
 		# 'BRoutefilter': ['Backbone']
 	})
 
+console.log('requireJS Init')
+console.log(Backbone)
 
+requirejs(['Backbone', 'collections/ingredients'], (Backbone, ingredients)->
+	window.App = {}
+	window.App.ingredients = new ingredients()
+	new groceryView()
+	)
