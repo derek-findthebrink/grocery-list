@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "groceries.js",
+  "sourceRoot": "../../../../..",
+  "sources": [
+    "dev/coffee/app/views/pages/groceries.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,CAAC,2BAAD,CAAP,EAAsC,SAAC,iBAAD;AAErC,QAAA;WAAA,OAAA,GAAU,QAAQ,CAAC,IAAI,CAAC,MAAd,CAAqB;MAC9B,EAAA,EAAI,iBAD0B;MAE9B,QAAA,EAAU,iBAFoB;MAG9B,MAAA,EAAQ,SAAA;QACP,IAAI,CAAC,GAAG,CAAC,IAAT,CAAc,IAAI,CAAC,QAAL,CAAA,CAAd;AACA,eAAO;MAFA,CAHsB;MAM9B,UAAA,EAAY,SAAA;QACX,OAAO,CAAC,GAAR,CAAY,qBAAZ;eACA,IAAI,CAAC,MAAL,CAAA;MAFW,CANkB;KAArB;EAF2B,CAAtC;AAAA"
+}

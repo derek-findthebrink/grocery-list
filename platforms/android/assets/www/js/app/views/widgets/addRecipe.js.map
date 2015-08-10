@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "addRecipe.js",
+  "sourceRoot": "../../../../..",
+  "sources": [
+    "dev/coffee/app/views/widgets/addRecipe.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,CAAC,6BAAD,CAAP,EAAwC,SAAC,iBAAD;AAEvC,QAAA;WAAA,SAAA,GAAY,QAAQ,CAAC,IAAI,CAAC,MAAd,CAAqB;MAChC,EAAA,EAAI,iBAD4B;MAEhC,QAAA,EAAU,iBAFsB;MAGhC,MAAA,EAAQ,SAAA;QACP,IAAI,CAAC,GAAG,CAAC,IAAT,CAAe,IAAI,CAAC,QAAL,CAAc,EAAd,CAAf;AACA,eAAO;MAFA,CAHwB;MAMhC,UAAA,EAAY,SAAA;QACX,OAAO,CAAC,GAAR,CAAY,gBAAZ;eACA,IAAI,CAAC,MAAL,CAAA;MAFW,CANoB;KAArB;EAF2B,CAAxC;AAAA"
+}

@@ -469,7 +469,7 @@ form {
     text-align: center;
     vertical-align: middle;
     font-weight: normal; }
-  form input, form textarea {
+  form input, form textarea, form select {
     display: inline-block;
     width: 70%; }
   form .form-field {
