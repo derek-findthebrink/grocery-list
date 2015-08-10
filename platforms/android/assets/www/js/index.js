@@ -20,6 +20,13 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+
+        var requireSrc = document.createElement("script");
+        requireSrc.type = 'text/javascript';
+        requireSrc.src = 'js/lib/requirejs/require.js';
+        requireSrc.setAttribute('data-main', 'js/app/appIndex');
+
+        document.body.appendChild(requireSrc);
     },
     // Bind Event Listeners
     //
@@ -45,6 +52,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
     }
 };
 
