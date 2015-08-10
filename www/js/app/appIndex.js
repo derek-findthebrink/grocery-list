@@ -2,6 +2,7 @@
 (function() {
   requirejs.config({
     paths: {
+      app: "/js/app/",
       jquery: '/js/lib/jquery/dist/jquery.min',
       Backbone: '/js/lib/backbone/backbone-min',
       underscore: '/js/lib/underscore/underscore-min',
@@ -19,8 +20,8 @@
     }
   });
 
-  require(['appIndex'], function(app) {
-    return console.log('appIndex ran!');
-  });
+  console.log('appIndex ran');
+
+  alert('appIndex ran!');
 
 }).call(this);
