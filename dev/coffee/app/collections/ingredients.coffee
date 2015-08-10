@@ -1,8 +1,9 @@
-define(['models/ingredient'], (ingredient)->
+define(['models/ingredient', 'collections/firebase'], (ingredient, firebase)->
 
 
-	ingredients = Backbone.Collection.extend({
+	ingredients = Backbone.Firebase.Collection.extend({
 		model: ingredient
+		url: firebase.url + '/ingredients'
 		initialize: ()->
 			console.log('ingredients init')
 			this.add({

@@ -4,7 +4,7 @@ require.config({
 		Backbone: '../lib/backbone/backbone-min'
 		underscore: '../lib/underscore/underscore-min'
 		jadeRuntime: '../lib/jadeRuntime'
-		firebase: '../lib/firebase/firebase'
+		Firebase: '../lib/firebase/firebase'
 		BFire: '../lib/backbonefire/dist/backbonefire'
 		# BRoutefilter: '/js/lib/routefilter/dist/backbone.routefilter.min.js'
 
@@ -19,12 +19,16 @@ require.config({
 		'Backbone': 
 			deps: ['underscore', 'jquery']
 			exports: "Backbone"
+		'BFire': 
+			deps: ['Backbone']
+		'Firebase':
+			exports: "Firebase"
 		# 'BRoutefilter': ['Backbone']
 	})
 
 console.log('requireJS init')
 
-requirejs(['Backbone'], (Backbone)->
+requirejs(['Backbone', 'BFire', 'Firebase'], (Backbone)->
 	require(['app'], (app)->
 		app.initialize()
 		)

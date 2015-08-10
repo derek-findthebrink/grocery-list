@@ -6,7 +6,7 @@
       Backbone: '../lib/backbone/backbone-min',
       underscore: '../lib/underscore/underscore-min',
       jadeRuntime: '../lib/jadeRuntime',
-      firebase: '../lib/firebase/firebase',
+      Firebase: '../lib/firebase/firebase',
       BFire: '../lib/backbonefire/dist/backbonefire',
       collections: './collections',
       models: './models',
@@ -18,13 +18,19 @@
       'Backbone': {
         deps: ['underscore', 'jquery'],
         exports: "Backbone"
+      },
+      'BFire': {
+        deps: ['Backbone']
+      },
+      'Firebase': {
+        exports: "Firebase"
       }
     }
   });
 
   console.log('requireJS init');
 
-  requirejs(['Backbone'], function(Backbone) {
+  requirejs(['Backbone', 'BFire', 'Firebase'], function(Backbone) {
     return require(['app'], function(app) {
       return app.initialize();
     });
