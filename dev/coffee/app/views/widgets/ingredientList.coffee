@@ -1,18 +1,20 @@
-define(['views/widgets/ingredient'], (ingredient)->
+define(['views/singles/ingredient'], (ingredient)->
 
 
 	groceryList = Backbone.View.extend({
-		el: '.groceries-list'
+		el: '.ingredients-list'
 		addAll: ()->
-			this.$el.find('ul').html('')
+			this.$el.html('')
 			this.collection.each( this.addOne, this)
 		addOne: (item)->
 			view = new ingredient({model: item})
-			this.$el.find('ul').append( view.render().el )
+			this.$el.append( view.render().el )
 		initialize: ()->
-			console.log('grocery list init')
+			console.log('ingredients list init')
 			this.collection = App.ingredients
-			# console.log(this.collection)
+
+			this.listenTo(this.collection, 'add', this.addAll)
+			
 			this.addAll()
 		})
 

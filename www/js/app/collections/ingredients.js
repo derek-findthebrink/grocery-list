@@ -6,13 +6,7 @@
       model: ingredient,
       url: firebase.url + '/ingredients',
       initialize: function() {
-        console.log('ingredients init');
-        this.add({
-          name: 'Broccoli'
-        });
-        return this.add({
-          name: 'Cauliflower'
-        });
+        return console.log('ingredients init');
       }
     });
     return ingredients;

@@ -1,0 +1,15 @@
+form 
+	label(for='ingredientType') type
+	select(name='ingredientType')
+		option(value='Produce') Produce
+		option(value="Dairy") Dairy
+		option(value="Meat") Meat
+		option(value="Spices") Spices
+		option(value="Supplies") Supplies
+		option(value='Herbs') Herbs
+		option(value='Cheese') Cheese
+		option(value='Cold') Cold
+	label(for='ingredientName') name
+	input(name='ingredientName' type='text')
+	label.label-placeholder
+	input(type='submit' value='Submit')

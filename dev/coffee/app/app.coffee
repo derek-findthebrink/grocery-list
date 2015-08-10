@@ -1,4 +1,4 @@
-define(['router','collections/ingredients', 'collections/recipes', 'views/widgets/groceryList'], (router, ingredients, recipes, groceryView)->
+define(['router','collections/ingredients', 'collections/recipes'], (router, ingredients, recipes)->
 
 	initialize = ()->
 		window.App = {}
