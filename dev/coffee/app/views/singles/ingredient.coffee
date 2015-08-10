@@ -1,4 +1,4 @@
-define(['templates/widgets/ingredient'], (templateIngredient)->
+define(['templates/singles/ingredient'], (templateIngredient)->
 
 
 	ingredientView = Backbone.View.extend({
@@ -9,7 +9,6 @@ define(['templates/widgets/ingredient'], (templateIngredient)->
 			return this
 		initialize: ()->
 			this.render()
-			return this
 		})
 
 

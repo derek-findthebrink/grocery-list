@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "types.js",
+  "sourceRoot": "../../../..",
+  "sources": [
+    "dev/coffee/app/models/types.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,SAAA;AAEN,QAAA;WAAA,KAAA,GAAQ,QAAQ,CAAC,KAAK,CAAC,MAAf,CAAsB;MAC7B,QAAA,EACC;QAAA,IAAA,EAAM,EAAN;QACA,WAAA,EAAa,EADb;OAF4B;KAAtB;EAFF,CAAP;AAAA"
+}

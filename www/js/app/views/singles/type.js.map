@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "type.js",
+  "sourceRoot": "../../../../..",
+  "sources": [
+    "dev/coffee/app/views/singles/type.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,CAAC,wBAAD,CAAP,EAAmC,SAAC,QAAD;AAElC,QAAA;WAAA,IAAA,GAAO,QAAQ,CAAC,IAAI,CAAC,MAAd,CAAqB;MAC3B,OAAA,EAAS,IADkB;MAE3B,QAAA,EAAU,QAFiB;MAG3B,MAAA,EAAQ,SAAA;eACP,IAAI,CAAC,GAAG,CAAC,IAAT,CAAe,IAAI,CAAC,QAAL,CAAe,IAAI,CAAC,KAAK,CAAC,MAAX,CAAA,CAAf,CAAf;MADO,CAHmB;MAK3B,UAAA,EAAY,SAAA;eACX,IAAI,CAAC,MAAL,CAAA;MADW,CALe;KAArB;EAF2B,CAAnC;AAAA"
+}

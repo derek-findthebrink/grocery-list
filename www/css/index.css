@@ -536,6 +536,12 @@ form {
   width: 80%;
   margin: 0 auto; }
 
+.menu ul, .menu h2, .menu h3 {
+  margin: 0; }
+
+section h2 {
+  margin: 0; }
+
 nav li {
   margin-right: 1em;
   display: inline-block; }
