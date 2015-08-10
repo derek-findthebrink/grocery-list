@@ -532,6 +532,10 @@ form {
   width: 8em;
   height: 8em; }
 
+form {
+  width: 80%;
+  margin: 0 auto; }
+
 nav li {
   margin-right: 1em;
   display: inline-block; }
@@ -587,6 +591,21 @@ main section {
         width: 100%; }
         main section article:last-child {
           margin-right: 0; } }
+
+.chooser {
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #67B13B; }
+  .chooser .nav {
+    background-color: #67B13B;
+    color: #d1e8c4; }
+    .chooser .nav li {
+      margin-right: 1em;
+      display: inline-block; }
+    .chooser .nav li {
+      cursor: pointer; }
 
 /* latin */
 @font-face {
