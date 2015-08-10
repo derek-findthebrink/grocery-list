@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "ingredient.js",
+  "sourceRoot": "../../../..",
+  "sources": [
+    "dev/coffee/app/models/ingredient.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,SAAA;AAGN,QAAA;IAAA,UAAA,GAAa,QAAQ,CAAC,KAAK,CAAC,MAAf,CAAsB;MAClC,QAAA,EACC;QAAA,IAAA,EAAM,EAAN;QACA,IAAA,EAAM,EADN;QAEA,cAAA,EAAgB,CAFhB;OAFiC;KAAtB;AAOb,WAAO;EAVD,CAAP;AAAA"
+}

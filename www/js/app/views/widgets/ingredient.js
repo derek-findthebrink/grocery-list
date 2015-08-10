@@ -3,9 +3,11 @@
   define(['templates/widgets/ingredient'], function(templateIngredient) {
     var ingredientView;
     return ingredientView = Backbone.View.extend({
+      tagName: 'li',
       template: templateIngredient,
       render: function() {
-        return this.$el.html(this.template(this.model.toJSON()));
+        this.$el.html(this.template(this.model.toJSON()));
+        return this;
       },
       initialize: function() {
         this.render();
@@ -15,3 +17,5 @@
   });
 
 }).call(this);
+
+//# sourceMappingURL=ingredient.js.map

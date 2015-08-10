@@ -4,7 +4,7 @@ define(['views/widgets/ingredient'], (ingredient)->
 	groceryList = Backbone.View.extend({
 		el: '.groceries-list'
 		addAll: ()->
-			this.$el.html('')
+			this.$el.find('ul').html('')
 			this.collection.each( this.addOne, this)
 		addOne: (item)->
 			view = new ingredient({model: item})
@@ -12,6 +12,7 @@ define(['views/widgets/ingredient'], (ingredient)->
 		initialize: ()->
 			console.log('grocery list init')
 			this.collection = App.ingredients
+			# console.log(this.collection)
 			this.addAll()
 		})
 

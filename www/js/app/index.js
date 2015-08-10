@@ -2,7 +2,6 @@
 (function() {
   require.config({
     paths: {
-      app: ".",
       jquery: '../lib/jquery/dist/jquery.min',
       Backbone: '../lib/backbone/backbone-min',
       underscore: '../lib/underscore/underscore-min',
@@ -23,14 +22,14 @@
     }
   });
 
-  console.log('requireJS Init');
+  console.log('requireJS init');
 
-  console.log(Backbone);
-
-  requirejs(['Backbone', 'collections/ingredients'], function(Backbone, ingredients) {
-    window.App = {};
-    window.App.ingredients = new ingredients();
-    return new groceryView();
+  requirejs(['Backbone'], function(Backbone) {
+    return require(['app'], function(app) {
+      return app.initialize();
+    });
   });
 
 }).call(this);
+
+//# sourceMappingURL=index.js.map

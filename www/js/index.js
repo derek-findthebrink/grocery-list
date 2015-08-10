@@ -24,7 +24,7 @@ var app = {
         var requireSrc = document.createElement("script");
         requireSrc.type = 'text/javascript';
         requireSrc.src = 'js/lib/requirejs/require.js';
-        requireSrc.setAttribute('data-main', 'js/app/appIndex');
+        requireSrc.setAttribute('data-main', 'js/app/index');
 
         document.body.appendChild(requireSrc);
     },

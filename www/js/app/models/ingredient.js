@@ -13,3 +13,5 @@
   });
 
 }).call(this);
+
+//# sourceMappingURL=ingredient.js.map

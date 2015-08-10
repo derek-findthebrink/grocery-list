@@ -5,7 +5,7 @@
     return groceryList = Backbone.View.extend({
       el: '.groceries-list',
       addAll: function() {
-        this.$el.html('');
+        this.$el.find('ul').html('');
         return this.collection.each(this.addOne, this);
       },
       addOne: function(item) {
@@ -24,3 +24,5 @@
   });
 
 }).call(this);
+
+//# sourceMappingURL=groceryList.js.map

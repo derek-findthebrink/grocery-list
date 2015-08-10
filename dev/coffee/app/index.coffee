@@ -1,7 +1,5 @@
 require.config({
 	paths:
-		app: "."
-
 		jquery: '../lib/jquery/dist/jquery.min'
 		Backbone: '../lib/backbone/backbone-min'
 		underscore: '../lib/underscore/underscore-min'
@@ -24,11 +22,10 @@ require.config({
 		# 'BRoutefilter': ['Backbone']
 	})
 
-console.log('requireJS Init')
-console.log(Backbone)
+console.log('requireJS init')
 
-requirejs(['Backbone', 'collections/ingredients'], (Backbone, ingredients)->
-	window.App = {}
-	window.App.ingredients = new ingredients()
-	new groceryView()
+requirejs(['Backbone'], (Backbone)->
+	require(['app'], (app)->
+		app.initialize()
+		)
 	)
