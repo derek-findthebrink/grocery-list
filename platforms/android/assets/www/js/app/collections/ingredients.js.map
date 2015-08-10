@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "ingredients.js",
+  "sourceRoot": "../../../..",
+  "sources": [
+    "dev/coffee/app/collections/ingredients.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,CAAC,mBAAD,CAAP,EAA8B,SAAC,UAAD;AAG7B,QAAA;IAAA,WAAA,GAAc,QAAQ,CAAC,UAAU,CAAC,MAApB,CAA2B;MACxC,KAAA,EAAO,UADiC;MAExC,UAAA,EAAY,SAAA;QACX,OAAO,CAAC,GAAR,CAAY,kBAAZ;QACA,IAAI,CAAC,GAAL,CAAS;UACR,IAAA,EAAM,UADE;SAAT;eAGA,IAAI,CAAC,GAAL,CAAS;UACR,IAAA,EAAM,aADE;SAAT;MALW,CAF4B;KAA3B;AAYd,WAAO;EAfsB,CAA9B;AAAA"
+}
