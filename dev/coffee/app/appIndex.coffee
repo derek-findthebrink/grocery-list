@@ -10,10 +10,10 @@ requirejs.config({
 		BFire: '/js/lib/backbonefire/dist/backbonefire'
 		# BRoutefilter: '/js/lib/routefilter/dist/backbone.routefilter.min.js'
 
-		collections: '/js/collections'
-		models: '/js/models'
-		views: '/js/views'
-		templates: '/js/templates'
+		collections: 'js/app/collections'
+		models: '/js/app/models'
+		views: '/js/app/views'
+		templates: '/js/app/templates'
 		# data: '/js/data'
 		# ui: '/js/brink-ui'
 	deps: ['jquery', 'underscore', 'Backbone']
@@ -22,6 +22,4 @@ requirejs.config({
 		# 'BRoutefilter': ['Backbone']
 	})
 
-console.log('appIndex ran')
 
-alert('appIndex ran!')

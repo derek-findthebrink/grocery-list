@@ -24,4 +24,8 @@
 
   alert('appIndex ran!');
 
+  define(['Backbone'], function() {
+    return alert(Backbone);
+  });
+
 }).call(this);

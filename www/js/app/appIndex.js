@@ -9,19 +9,15 @@
       jadeRuntime: '/js/lib/jadeRuntime',
       firebase: '/js/lib/firebase/firebase',
       BFire: '/js/lib/backbonefire/dist/backbonefire',
-      collections: '/js/collections',
-      models: '/js/models',
-      views: '/js/views',
-      templates: '/js/templates'
+      collections: 'js/app/collections',
+      models: '/js/app/models',
+      views: '/js/app/views',
+      templates: '/js/app/templates'
     },
     deps: ['jquery', 'underscore', 'Backbone'],
     shim: {
       'Backbone': ['underscore', 'jquery']
     }
   });
-
-  console.log('appIndex ran');
-
-  alert('appIndex ran!');
 
 }).call(this);
