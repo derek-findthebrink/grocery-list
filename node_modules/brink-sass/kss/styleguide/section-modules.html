@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>brink. | Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../index.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">brink-SMACSS<br>Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./index.html">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-animations.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Animations</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-base.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Base</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Color</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-display.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Display</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-helpers.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Helpers</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-layout.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Layout</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-modules.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Modules</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-bubble">
+                <span class="kss-nav__ref">7.1</span
+                ><span class="kss-nav__name">bubble</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-button">
+                <span class="kss-nav__ref">7.2</span
+                ><span class="kss-nav__name">@mixin button</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-form">
+                <span class="kss-nav__ref">7.3</span
+                ><span class="kss-nav__name">form</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-header">
+                <span class="kss-nav__ref">7.4</span
+                ><span class="kss-nav__name">header</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-icons">
+                <span class="kss-nav__ref">7.5</span
+                ><span class="kss-nav__name">icons</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-list">
+                <span class="kss-nav__ref">7.6</span
+                ><span class="kss-nav__name">list</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-menu">
+                <span class="kss-nav__ref">7.7</span
+                ><span class="kss-nav__name">@mixin menu</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-nav">
+                <span class="kss-nav__ref">7.8</span
+                ><span class="kss-nav__name">nav</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-sidebar">
+                <span class="kss-nav__ref">7.9</span
+                ><span class="kss-nav__name">@mixin sidebar</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-text-headline">
+                <span class="kss-nav__ref">7.10</span
+                ><span class="kss-nav__name">@mixin text-headline</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-modules.html#kssref-modules-top-image">
+                <span class="kss-nav__ref">7.11</span
+                ><span class="kss-nav__name">@mixin top-image</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-modules" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-modules">
+          <span class="kss-title__ref">7</span
+          >Modules
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Code snippets that come with the brink tech SMACSS package</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-modules-bubble" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-bubble">
+          <span class="kss-title__ref">7.1</span
+          >bubble
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>creates a sort of hovering section of delight</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class='[modifier class]'> 
+	<div class='glyph glyph-online-visibility'></div>
+	<h3>headline</h3>
+	<p>text lots of text this is text</p>
+	<ul>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ul>
+</div>
+
+
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .bubble
+        </div>
+        <div class="kss-modifier__description kss-style">
+          default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class='bubble'> 
+	<div class='glyph glyph-online-visibility'></div>
+	<h3>headline</h3>
+	<p>text lots of text this is text</p>
+	<ul>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ul>
+</div>
+
+
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .bubble-round
+        </div>
+        <div class="kss-modifier__description kss-style">
+          round bubble
+        </div>
+        <div class="kss-modifier__example">
+          <div class='bubble-round'> 
+	<div class='glyph glyph-online-visibility'></div>
+	<h3>headline</h3>
+	<p>text lots of text this is text</p>
+	<ul>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ul>
+</div>
+
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&#x27;[modifier class]&#x27;&gt; 
+	&lt;div class=&#x27;glyph glyph-online-visibility&#x27;&gt;&lt;/div&gt;
+	&lt;h3&gt;headline&lt;/h3&gt;
+	&lt;p&gt;text lots of text this is text&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;list item&lt;/li&gt;
+		&lt;li&gt;list item&lt;/li&gt;
+		&lt;li&gt;list item&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-bubble.bubble" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-bubble.bubble">
+          <span class="kss-title__ref">7.1.1</span
+          >@mixin bubble
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$bubble-margin-bottom</code>
+          <div class="kss-parameters__description">margin to add at the bottom of the bubble</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>creates a bubble of content that hovers above the page. good for placing in grids. Works best with ul. Add to child elements themselves.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-bubble.bubble-round" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-bubble.bubble-round">
+          <span class="kss-title__ref">7.1.2</span
+          >@mixin bubble-round
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>same as the bubble, only this time the border radius is set at 50% -&gt; making it round. include after bubble mixin</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-button" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-button">
+          <span class="kss-title__ref">7.2</span
+          >@mixin button
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>makes a button</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <button class='[modifier class]'>I'm some content!</button>
+<button class='[modifier class]'>Click me!</button>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .button-cool
+        </div>
+        <div class="kss-modifier__description kss-style">
+          a cool button
+        </div>
+        <div class="kss-modifier__example">
+          <button class='button-cool'>I'm some content!</button>
+<button class='button-cool'>Click me!</button>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class=&#x27;[modifier class]&#x27;&gt;I&#x27;m some content!&lt;/button&gt;
+&lt;button class=&#x27;[modifier class]&#x27;&gt;Click me!&lt;/button&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-form" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-form">
+          <span class="kss-title__ref">7.3</span
+          >form
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>styles for forms</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <form class="[modifier class]">
+	<div class='message'></div>
+	<label>Name</label>
+	<input type='text' />
+	<label>Phone</label>
+	<input type='text' />
+	<label>Details</label>
+	<textarea></textarea>
+	<label class='label-placeholder'></label>
+	<input type='submit' />
+</form>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .form-pretty
+        </div>
+        <div class="kss-modifier__description kss-style">
+          pretty form
+        </div>
+        <div class="kss-modifier__example">
+          <form class="form-pretty">
+	<div class='message'></div>
+	<label>Name</label>
+	<input type='text' />
+	<label>Phone</label>
+	<input type='text' />
+	<label>Details</label>
+	<textarea></textarea>
+	<label class='label-placeholder'></label>
+	<input type='submit' />
+</form>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .test-form-sending
+        </div>
+        <div class="kss-modifier__description kss-style">
+          form that is sending
+        </div>
+        <div class="kss-modifier__example">
+          <form class="test-form-sending">
+	<div class='message'></div>
+	<label>Name</label>
+	<input type='text' />
+	<label>Phone</label>
+	<input type='text' />
+	<label>Details</label>
+	<textarea></textarea>
+	<label class='label-placeholder'></label>
+	<input type='submit' />
+</form>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .test-form-success
+        </div>
+        <div class="kss-modifier__description kss-style">
+          form that successfully sent
+        </div>
+        <div class="kss-modifier__example">
+          <form class="test-form-success">
+	<div class='message'></div>
+	<label>Name</label>
+	<input type='text' />
+	<label>Phone</label>
+	<input type='text' />
+	<label>Details</label>
+	<textarea></textarea>
+	<label class='label-placeholder'></label>
+	<input type='submit' />
+</form>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .test-form-error
+        </div>
+        <div class="kss-modifier__description kss-style">
+          form that did not successfully send
+        </div>
+        <div class="kss-modifier__example">
+          <form class="test-form-error">
+	<div class='message'></div>
+	<label>Name</label>
+	<input type='text' />
+	<label>Phone</label>
+	<input type='text' />
+	<label>Details</label>
+	<textarea></textarea>
+	<label class='label-placeholder'></label>
+	<input type='submit' />
+</form>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form class=&quot;[modifier class]&quot;&gt;
+	&lt;div class=&#x27;message&#x27;&gt;&lt;/div&gt;
+	&lt;label&gt;Name&lt;/label&gt;
+	&lt;input type=&#x27;text&#x27; /&gt;
+	&lt;label&gt;Phone&lt;/label&gt;
+	&lt;input type=&#x27;text&#x27; /&gt;
+	&lt;label&gt;Details&lt;/label&gt;
+	&lt;textarea&gt;&lt;/textarea&gt;
+	&lt;label class=&#x27;label-placeholder&#x27;&gt;&lt;/label&gt;
+	&lt;input type=&#x27;submit&#x27; /&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-form.form-pretty" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-form.form-pretty">
+          <span class="kss-title__ref">7.3.1</span
+          >@mixin form-pretty
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>makes a normal form into a pretty form! include in form selector</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-form.is-form-active" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-form.is-form-active">
+          <span class="kss-title__ref">7.3.2</span
+          >@mixin is-form-active
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>default styles for an active form</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-form.is-form-error" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-form.is-form-error">
+          <span class="kss-title__ref">7.3.3</span
+          >@mixin is-form-error
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>styles a form that was unsuccessfully sent to the server</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-form.is-form-sending" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-form.is-form-sending">
+          <span class="kss-title__ref">7.3.4</span
+          >@mixin is-form-sending
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>styles a frozen form that is in the process of being sent</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-form.is-form-sent" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-form.is-form-sent">
+          <span class="kss-title__ref">7.3.5</span
+          >@mixin is-form-sent
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>styles a frozen form that has been successfully sent</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-header" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-header">
+          <span class="kss-title__ref">7.4</span
+          >header
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>header modules. A header is composed of the header element which has each:
+children h1, x.logo, x.location</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <header class='[modifier class]'>
+	<div class='logo'></div>
+	<h1>Header</h1>
+	<ul class='location'>
+		<li> vancouver, bc</li>
+	</ul>
+</header>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .is-header-collapsed
+        </div>
+        <div class="kss-modifier__description kss-style">
+          collapses on scroll
+        </div>
+        <div class="kss-modifier__example">
+          <header class='is-header-collapsed'>
+	<div class='logo'></div>
+	<h1>Header</h1>
+	<ul class='location'>
+		<li> vancouver, bc</li>
+	</ul>
+</header>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;header class=&#x27;[modifier class]&#x27;&gt;
+	&lt;div class=&#x27;logo&#x27;&gt;&lt;/div&gt;
+	&lt;h1&gt;Header&lt;/h1&gt;
+	&lt;ul class=&#x27;location&#x27;&gt;
+		&lt;li&gt; vancouver, bc&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/header&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-header.header" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-header.header">
+          <span class="kss-title__ref">7.4.1</span
+          >@mixin header
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$logo</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$size</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$margin</code>
+          <div class="kss-parameters__description">description</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>default setup for header. Assumes that .location has a
+default font-size of 1rem</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-header.header-scroll-collapse" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-header.header-scroll-collapse">
+          <span class="kss-title__ref">7.4.2</span
+          >@mixin is-header-collapsed
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>collapses the header into a nav and header on scroll down
+requires javascript?</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-icons" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-icons">
+          <span class="kss-title__ref">7.5</span
+          >icons
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>icon set by brink tech</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph [modifier class]'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-email
+        </div>
+        <div class="kss-modifier__description kss-style">
+          email icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-email'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-gps
+        </div>
+        <div class="kss-modifier__description kss-style">
+          gps icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-gps'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-oil
+        </div>
+        <div class="kss-modifier__description kss-style">
+          oil icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-oil'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-phone
+        </div>
+        <div class="kss-modifier__description kss-style">
+          phone icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-phone'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-recruiting
+        </div>
+        <div class="kss-modifier__description kss-style">
+          recruiting icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-recruiting'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-reputation
+        </div>
+        <div class="kss-modifier__description kss-style">
+          reputation icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-reputation'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-trends
+        </div>
+        <div class="kss-modifier__description kss-style">
+          trends icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-trends'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-uptime
+        </div>
+        <div class="kss-modifier__description kss-style">
+          uptime icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-uptime'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-business-cards
+        </div>
+        <div class="kss-modifier__description kss-style">
+          business cards icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-business-cards'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-devices
+        </div>
+        <div class="kss-modifier__description kss-style">
+          devices icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-devices'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-domain
+        </div>
+        <div class="kss-modifier__description kss-style">
+          domain management icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-domain'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-graphics
+        </div>
+        <div class="kss-modifier__description kss-style">
+          graphics development icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-graphics'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-hardware
+        </div>
+        <div class="kss-modifier__description kss-style">
+          hardware icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-hardware'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-online-visibility
+        </div>
+        <div class="kss-modifier__description kss-style">
+          online visibility icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-online-visibility'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-brand
+        </div>
+        <div class="kss-modifier__description kss-style">
+          brand icon
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-brand'></div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .glyph-brand.glyph-size-large
+        </div>
+        <div class="kss-modifier__description kss-style">
+          brand icon in large size
+        </div>
+        <div class="kss-modifier__example">
+          <div class='glyph glyph-brand glyph-size-large'></div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&#x27;glyph [modifier class]&#x27;&gt;&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-list" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-list">
+          <span class="kss-title__ref">7.6</span
+          >list
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>resets styles on the element back to list-specific defaults. Good for removing the cascade from mixins like &#39;grid&#39;, &#39;bubble&#39;. Add to list items themselves.</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          
+<ul>
+  <li class="[modifier class]">list item</li>
+  <li class="[modifier class]">list item</li>
+  <li class="[modifier class]">list item</li>
+  <li class="[modifier class]">list item</li>
+  <li class="[modifier class]">list item</li>
+  <li class="[modifier class] complete">list item</li>
+</ul>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .list-pretty
+        </div>
+        <div class="kss-modifier__description kss-style">
+          pretty style
+        </div>
+        <div class="kss-modifier__example">
+          
+<ul>
+  <li class="list-pretty">list item</li>
+  <li class="list-pretty">list item</li>
+  <li class="list-pretty">list item</li>
+  <li class="list-pretty">list item</li>
+  <li class="list-pretty">list item</li>
+  <li class="list-pretty complete">list item</li>
+</ul>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">
+&lt;ul&gt;
+  &lt;li class=&quot;[modifier class]&quot;&gt;list item&lt;/li&gt;
+  &lt;li class=&quot;[modifier class]&quot;&gt;list item&lt;/li&gt;
+  &lt;li class=&quot;[modifier class]&quot;&gt;list item&lt;/li&gt;
+  &lt;li class=&quot;[modifier class]&quot;&gt;list item&lt;/li&gt;
+  &lt;li class=&quot;[modifier class]&quot;&gt;list item&lt;/li&gt;
+  &lt;li class=&quot;[modifier class] complete&quot;&gt;list item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-list.list" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-list.list">
+          <span class="kss-title__ref">7.6.1</span
+          >@mixin list
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>resets element to default list item styling. apply to li</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-list.list-pretty" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-list.list-pretty">
+          <span class="kss-title__ref">7.6.2</span
+          >@mixin list-pretty
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>includes @mixin list, but adds some nice coloring and hover effects</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-menu" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-menu">
+          <span class="kss-title__ref">7.7</span
+          >@mixin menu
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>creates a menu with hidden nested lists -&gt; hover show to display</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-nav" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-nav">
+          <span class="kss-title__ref">7.8</span
+          >nav
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>nav styles</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <nav class="[modifier class]">
+	<ul>
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">Portfolio</a>
+		</li>
+		<li>
+			<a href="#">About</a>
+		</li>
+	</ul>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .nav-horizontal
+        </div>
+        <div class="kss-modifier__description kss-style">
+          horizontal nav example
+        </div>
+        <div class="kss-modifier__example">
+          <nav class="nav-horizontal">
+	<ul>
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">Portfolio</a>
+		</li>
+		<li>
+			<a href="#">About</a>
+		</li>
+	</ul>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .nav-justified
+        </div>
+        <div class="kss-modifier__description kss-style">
+          justified nav example
+        </div>
+        <div class="kss-modifier__example">
+          <nav class="nav-justified">
+	<ul>
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">Portfolio</a>
+		</li>
+		<li>
+			<a href="#">About</a>
+		</li>
+	</ul>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;nav class=&quot;[modifier class]&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;Portfolio&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-modules-nav.nav" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-nav.nav">
+          <span class="kss-title__ref">7.8.1</span
+          >@mixin nav
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>sets default nav styling</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-nav.nav-horizontal" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-nav.nav-horizontal">
+          <span class="kss-title__ref">7.8.2</span
+          >@mixin nav-horizontal
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>makes all nav items (in a ul) display horizontally with some default padding</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-nav.nav-justified" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-modules-nav.nav-justified">
+          <span class="kss-title__ref">7.8.3</span
+          >@mixin nav-justified
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">\$padding</code>
+          <div class="kss-parameters__description">padding to add to left and right of li</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>makes a nav item (in a ul) display stretched across the page, filling all spaces in the ul</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-sidebar" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-sidebar">
+          <span class="kss-title__ref">7.9</span
+          >@mixin sidebar
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$float</code>
+          <div class="kss-parameters__description">which side of the parent element to float the sidebar to &lt; left | right &gt;</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>creates a sidebar section with some useful defaults</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-text-headline" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-text-headline">
+          <span class="kss-title__ref">7.10</span
+          >@mixin text-headline
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>emphasizes text by adding quotations and some default displays to make it pop</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-modules-top-image" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-modules-top-image">
+          <span class="kss-title__ref">7.11</span
+          >@mixin top-image
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>places an image at the top of the page -&gt; a kind of badass header</p>
+
+      </div>
+    </div>
+
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+<script src="../jquery.min.js"></script>
+<script src="../bundle.js"></script>
+
+
+<script src="//use.typekit.net/rsz1its.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

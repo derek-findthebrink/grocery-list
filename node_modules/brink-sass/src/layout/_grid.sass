@@ -1,0 +1,23 @@
+// @mixin grid
+//
+// sets the element to display children in a grid format
+//
+// $col	- number of columns the grid should have. defaults to $grid-col-default
+// $max-width	- max width of the parent. defaults to 100%
+// 
+// Styleguide Layout.grid
+
+
+// mobile breakpoint
+$mobile: new-breakpoint(max-width 768px 4)
+$grid-col-default: 4 !default
+
+@mixin grid($child-el: li, $col: $grid-col-default, $max-width: 100%)
+	// mobile breakpoint - will display each unit across entire display
+	// should be reconsidered!!
+	@include outer-container($max-width)
+	#{$child-el}
+		@include span-columns((1 of $col))
+		@include omega( #{$col}n )
+		@include media($mobile)
+			@include span-columns(4)

@@ -1,0 +1,28 @@
+{
+  "name": "brink-sass",
+  "version": "0.1.10",
+  "homepage": "https://github.com/findthebrink/brink-sass",
+  "authors": [
+    "Derek <repos@findthebrink.com>"
+  ],
+  "description": "partially opinionated sass framework created by brink technology",
+  "main": "_index.sass",
+  "keywords": [
+    "sass",
+    "brink",
+    "css",
+    "front-end",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sticky": "~1.0.1"
+  }
+}

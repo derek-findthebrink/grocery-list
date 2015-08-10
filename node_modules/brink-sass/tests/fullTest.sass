@@ -1,0 +1,35 @@
+@import "../src/index"
+
+html
+	@include ac($color-primary)
+
+header
+	@include ac($color-secondary)
+	figure
+		width: 25%
+		display: inline-block
+		float: left
+
+section
+	@include ac($color-quaternary)
+	@include content-inset
+	padding: unpack(1.5em 1.5em 0)
+	overflow: auto
+
+article
+	@include ac(white)
+	padding: 1em
+	& > ul
+		@include grid(3)
+		& > li 
+			@include bubble(1em)
+			@include hover-show-down(ul, 8em, 1em)
+			ul li
+				@include list-pretty
+
+
+pre
+	@include ac(mix($color-quaternary, white, 30%))
+	color: color-monotone($color-primary, 3)
+	margin: 0 2em
+

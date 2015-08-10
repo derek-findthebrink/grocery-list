@@ -1,0 +1,51 @@
+$color-percent-default: 30% !default
+$color-denom-default: 10 !default
+
+// @mixin appropriate-colors
+//
+// creates sets color and background color based on relationship set in parameters
+//
+// $color	- the color to be used
+// $percent	- the percent to mix with the contrast (either white or black). defaults to 30%
+// 
+// Styleguide Color.appropriate-colors
+
+@mixin appropriate-colors( $color, $percent: $color-percent-default)
+	background-color: $color
+	@if lightness($color) < 50%
+		color: mix($color, white, $percent)
+	@else if lightness($color) > 50%
+		color: mix($color, black, $percent)
+
+// @mixin ac
+//
+// shorthand for @mixin appropriate-colors
+//
+// $color	- color to be used
+// $percent	- percent
+// 
+// Styleguide Color.ac
+
+@mixin ac($color, $percent: $color-percent-default)
+	@include appropriate-colors($color, $percent)
+
+// @function color-monotone
+//
+// chooses a color based on parameters set
+//
+// $color	- color to start from
+// $num	- the color to return -> chosen based on choosing a number between 0 and $denom. If the middle number is chosen, the same color as $color is returned
+// $denom	- establishes the range of colors to be chosen from (think $num / $denom, or x / 10). defaults to 10
+// 
+// Styleguide Color.color-monotone
+
+@function color-monotone( $color, $num, $denom: $color-denom-default)
+	$ratio: $num / $denom
+	@if $ratio > 0.5
+		$percent: ($ratio - 0.5) / 0.5 * 100%
+		@return mix(white, $color, $percent )
+	@else if $ratio < 0.5
+		$percent: $ratio / 0.5 * 100%
+		@return mix($color, black, $percent )
+	@else if $ratio == 0.5
+		@return $color

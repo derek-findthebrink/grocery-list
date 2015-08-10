@@ -1,0 +1,50 @@
+// @mixin dropShadow
+//
+// adds a box-shadow to the element
+//
+// $x	- x offset value. defaults to $dropShadow-x
+// $y	- y offset value. defaults to $dropShadow-y
+// $color	- color of the drop shadow. defaults to $dropShadow-color
+// 
+// Styleguide Display.dropShadow
+
+@mixin dropShadow($color: $dropShadow-color, $x: $dropShadow-x, $y: $dropShadow-y)
+	-webkit-box-shadow: $x $x $y $color
+	-moz-box-shadow: $x $x $y $color
+	box-shadow: $x $x $y $color
+
+// @mixin opacity
+//
+// sets the opacity of an element
+//
+// $opacity	- the ratio to change the opacity to (between 0 and 1)
+// 
+// Styleguide Display.opacity
+
+@mixin opacity($opacity)
+	opacity: $opacity
+	$opacity-ie: $opacity * 100
+	filter: alpha(opacity=$opacity-ie)
+
+// @mixin rounded-corners
+//
+// adds a border radius to the element
+//
+// $amount	- length of radius to add to element. defaults to $border-radius
+// 
+// Styleguide Display.rounded-corners
+
+@mixin rounded-corners($amount: $border-radius)
+	border-radius: $amount
+
+// @mixin brink-border
+//
+// sets brink styles on border
+//
+// $color	- the color of the border. defaults to #$color-secondary
+// 
+// Styleguide Display.brink-border
+
+@mixin brink-border($color: $color-secondary)
+	border: 1px solid $color
+	border-radius: $border-radius

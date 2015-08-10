@@ -1,0 +1,64 @@
+// nav
+//
+// nav styles
+//
+// .nav-horizontal	- horizontal nav example
+// .nav-justified	- justified nav example
+//
+// Markup: markup/nav.html
+//
+// Styleguide Modules.nav
+
+// @mixin nav
+//
+// sets default nav styling
+//
+// Styleguide Modules.nav.nav
+
+@mixin nav($color: $color-primary)
+	@include ac($color)
+	width: 100%
+	padding-bottom: 1px
+	//font-size: 130%
+	li
+		@include ac($color)
+		@include transition(all 1s)
+		padding: 0.3em
+		&:hover
+			@include ac( color-monotone($color, 9) )
+
+// @mixin nav-horizontal
+//
+// makes all nav items (in a ul) display horizontally with some default padding
+//
+// Styleguide Modules.nav.nav-horizontal
+
+@mixin nav-horizontal
+	li
+		margin-right: 1em
+		display: inline-block
+
+// @mixin nav-justified
+//
+// makes a nav item (in a ul) display stretched across the page, filling all spaces in the ul
+//
+// \$padding 	- padding to add to left and right of li
+//
+// Styleguide Modules.nav.nav-justified
+
+@mixin nav-justified($padding: 3em)
+	ul
+		width: 100%
+		font-size: 0
+		text-align: justify
+		li 
+			display: inline-block
+			font-size: 1rem
+			padding-left: $padding 
+			padding-right: $padding
+			text-align: justify
+	ul:after
+		content: ''
+		width: 100%
+		display: inline-block
+		text-align: justify

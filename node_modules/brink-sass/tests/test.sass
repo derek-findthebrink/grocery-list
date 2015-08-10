@@ -1,0 +1,61 @@
+@import "../src/config"
+
+// helpers
+
+@import "../src/helpers/helpers"
+
+.square
+	@include square(10em)
+
+.rectangle
+	@include rectangle(10em, 5em)
+
+@include element-styles
+	font-family: Arial
+
+.footer
+	@include fixedBottom
+
+.float
+	@include float
+
+.text-center
+	@include text-align
+	@include text-align(right)
+
+.inset
+	@include content-inset
+	@include content-inset(10%)
+	@include content-inset(30%, 10px 0 0 0)
+
+.clearfix
+	@extend %clearfix
+
+.hide-content
+	@extend %visuallyhidden
+
+// color
+
+@import "../src/color/color"
+
+.blue
+	@include appropriate-colors(blue, 'dark')
+	@include appropriate-colors(blue, 'dark', 10%)
+	@include appropriate-colors(blue, 'light', 10%)
+
+@include generate-monotone-colors('blue', blue)
+
+// animation
+@import '../src/animations/animations'
+
+@include kf-color-attention
+
+// display functions
+@import '../src/display/functions'
+
+.dropShadow
+	@include dropShadow()
+	@include dropShadow(10px)
+	@include dropShadow(15px,3px)
+	@include dropShadow(15px,3px, blue)
+

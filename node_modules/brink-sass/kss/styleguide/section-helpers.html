@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>brink. | Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../index.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">brink-SMACSS<br>Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./index.html">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-animations.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Animations</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-base.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Base</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Color</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-display.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Display</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-helpers.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Helpers</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-helpers.html#kssref-helpers-clearfix">
+                <span class="kss-nav__ref">5.1</span
+                ><span class="kss-nav__name">%clearfix</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-helpers.html#kssref-helpers-visuallyhidden">
+                <span class="kss-nav__ref">5.2</span
+                ><span class="kss-nav__name">%visuallyhidden</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-helpers.html#kssref-helpers-element-styles">
+                <span class="kss-nav__ref">5.3</span
+                ><span class="kss-nav__name">@mixin element-styles</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-helpers.html#kssref-helpers-header-styles">
+                <span class="kss-nav__ref">5.4</span
+                ><span class="kss-nav__name">@mixin header-styles</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-helpers.html#kssref-helpers-rectangle">
+                <span class="kss-nav__ref">5.5</span
+                ><span class="kss-nav__name">@mixin rectangle</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-helpers.html#kssref-helpers-square">
+                <span class="kss-nav__ref">5.6</span
+                ><span class="kss-nav__name">@mixin square</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-layout.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Layout</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-modules.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Modules</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-helpers" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-helpers">
+          <span class="kss-title__ref">5</span
+          >Helpers
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>helper classes and systems</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-helpers-clearfix" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-helpers-clearfix">
+          <span class="kss-title__ref">5.1</span
+          >%clearfix
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>clear&#39;s both sides of the element in an intelligent way. used via @extend %clearfix</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-helpers-visuallyhidden" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-helpers-visuallyhidden">
+          <span class="kss-title__ref">5.2</span
+          >%visuallyhidden
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>hides the text from view but maintains text-reader readability</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-helpers-element-styles" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-helpers-element-styles">
+          <span class="kss-title__ref">5.3</span
+          >@mixin element-styles
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">@content</code>
+          <div class="kss-parameters__description">the style to add to each in the list</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>for each element in $element-list, sets the style in a way that maintains the cascade -&gt; low selectability</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-helpers-header-styles" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-helpers-header-styles">
+          <span class="kss-title__ref">5.4</span
+          >@mixin header-styles
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">@content</code>
+          <div class="kss-parameters__description">the style to add to each header</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>for each header, sets the style in a way that maintains the cascade -&gt; low selectability</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-helpers-rectangle" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-helpers-rectangle">
+          <span class="kss-title__ref">5.5</span
+          >@mixin rectangle
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$width</code>
+          <div class="kss-parameters__description">width of the element</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$height</code>
+          <div class="kss-parameters__description">height of the element</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>sets width and height based on parameters</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-helpers-square" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-helpers-square">
+          <span class="kss-title__ref">5.6</span
+          >@mixin square
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$dim</code>
+          <div class="kss-parameters__description">side length of the square</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>sets width and height to be equal to the parameters</p>
+
+      </div>
+    </div>
+
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+<script src="../jquery.min.js"></script>
+<script src="../bundle.js"></script>
+
+
+<script src="//use.typekit.net/rsz1its.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

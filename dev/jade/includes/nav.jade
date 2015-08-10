@@ -1,0 +1,23 @@
+-
+	home = {
+		href: "index.html",
+		title: 'home'
+	};
+	recipes = {
+		href: 'recipes.html',
+		title: 'recipes'
+	};
+	kitchen = {
+		href: 'kitchen.html',
+		title: 'kitchen'
+	};
+	groceries = {
+		href: 'groceries.html',
+		title: 'groceries'
+	}
+
+	mainNav = [home, recipes, kitchen, groceries];
+
+ul
+	each item in mainNav
+		+navList(item)

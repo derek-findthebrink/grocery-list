@@ -1,0 +1,94 @@
+// dimensions
+
+// @mixin square
+//
+// sets width and height to be equal to the parameters
+//
+// $dim	- side length of the square
+// 
+// Styleguide Helpers.square
+
+@mixin square ($dim)
+	width: $dim
+	height: $dim
+
+// @mixin rectangle
+//
+// sets width and height based on parameters
+//
+// $width	- width of the element
+// $height	- height of the element
+// 
+// Styleguide Helpers.rectangle
+
+@mixin rectangle ($width, $height)
+	width: $width
+	height: $height
+
+// styles
+
+// @mixin element-styles
+//
+// for each element in $element-list, sets the style in a way that maintains the cascade -> low selectability
+//
+// @content	- the style to add to each in the list 
+// 
+// Styleguide Helpers.element-styles
+
+@mixin element-styles
+	@each $el in $element-list
+		#{$el}
+			@content
+
+// @mixin header-styles
+//
+// for each header, sets the style in a way that maintains the cascade -> low selectability
+//
+// @content	- the style to add to each header
+// 
+// Styleguide Helpers.header-styles
+
+@mixin header-styles
+	@for $i from 1 through 6
+		h#{$i}
+			@content
+
+
+// clearfix
+// usage: @extend %clearfix
+
+// %clearfix
+//
+// clear's both sides of the element in an intelligent way. used via @extend %clearfix
+//
+// Styleguide Helpers.%clearfix
+
+%clearfix
+	*zoom: 1
+	&:before, &:after
+		content: ''
+		display: table
+	&:after
+		clear: both
+
+// hide element while retaining usability for screen readers
+// usage: 	class='visually-hidden
+//			.visually-hidden
+//				@extend %visuallyhidden
+
+// %visuallyhidden
+//
+// hides the text from view but maintains text-reader readability
+//
+// Styleguide Helpers.%visuallyhidden
+
+%visuallyhidden
+	margin: -1px 
+	padding: 0
+	width: 1px
+	height: 1px
+	overflow: hidden
+	clip: rect(0 0 0 0)
+	clip: rect(0, 0, 0, 0)
+	position: absolute
+

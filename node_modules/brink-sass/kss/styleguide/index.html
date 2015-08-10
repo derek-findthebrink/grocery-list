@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>brink. | Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../index.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">brink-SMACSS<br>Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./index.html">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-animations.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Animations</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-base.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Base</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Color</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-display.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Display</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-helpers.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Helpers</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-layout.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Layout</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-modules.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Modules</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+  <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+     <h1 id="brink-template-styleguide">brink template styleguide</h1>
+<p>read below to understand more about how the framework works
+check out the links to the left</p>
+<h2 id="principles">Principles</h2>
+<p>This is an implementation of SMACSS that is designed to play well with other frameworks (such as twitter Bootstrap)</p>
+<ul>
+<li>uses normalize.css (!!! add ref)</li>
+<li>compatible with html5 shiv (!!! add ref)</li>
+<li>is namespaced</li>
+<li>attempts not to override useful defaults provided by normalize and bootstrap</li>
+<li>is awesome</li>
+</ul>
+<h2 id="smacss">SMACSS</h2>
+<hr>
+<p>as this is a SMACSS implementation, it follows some general rules with a couple of twists:</p>
+<h3 id="vars">Vars</h3>
+<hr>
+<p><strong>this is one of the twists</strong></p>
+<h3 id="color">Color</h3>
+<hr>
+<p><strong>this is another one of the twists</strong></p>
+<h3 id="base">Base</h3>
+<hr>
+<p>A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudo-classes. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page. (smacss.com, <a href="https://smacss.com/book/type-base">https://smacss.com/book/type-base</a>)</p>
+<h3 id="layout">Layout</h3>
+<hr>
+<p>Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate. (smacss.com, <a href="https://smacss.com/book/type-layout">https://smacss.com/book/type-layout</a>)</p>
+<h3 id="modules">Modules</h3>
+<hr>
+<p>As briefly mentioned in the previous section, a Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking. (smacss.com, <a href="https://smacss.com/book/type-module">https://smacss.com/book/type-module</a>)</p>
+<h3 id="state">State</h3>
+<hr>
+<p>A state is something that augments and overrides all other styles. For example, an accordion section may be in a collapsed or expanded state. A message may be in a success or error state.</p>
+<p>States are generally applied to the same element as a layout rule or applied to the same element as a base module class. (smacss.com, <a href="https://smacss.com/book/type-state">https://smacss.com/book/type-state</a>)</p>
+<h3 id="theme">Theme</h3>
+<hr>
+<p>It is probably self-evident but a theme defines colours and images that give your application or site its look and feel. Separating the theme out into its own set of styles allows for those styles to be easily redefined for alternate themes.</p>
+<p>Themes can affect any of the primary types. It could override base styles like default link colours. It could change module elements such as chrome colours and borders. It could affect layout with different arrangements. It could also alter how states look. (smacss.com, <a href="https://smacss.com/book/type-theme">https://smacss.com/book/type-theme</a>)</p>
+<hr>
+<h2 id="project-structure">Project Structure</h2>
+<p>the project structure at this point is a bit crazy, but it&#39;s slowly being pared down.</p>
+<h2 id="goals">Goals</h2>
+<ul>
+<li>user links to single css stylesheet in dist folder</li>
+<li>all other files listed in sources folder</li>
+</ul>
+
+  </div>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+<script src="../jquery.min.js"></script>
+<script src="../bundle.js"></script>
+
+
+<script src="//use.typekit.net/rsz1its.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+// @mixin top-image
+//
+// places an image at the top of the page -> a kind of badass header
+//
+// Styleguide Modules.top-image
+
+// main purpose - place image at top, allow text to be centered within
+@mixin top-image
+	height: $module-topImage-height
+	width: 100%
+	margin-top: -5em
+	background-size: 100%
+	text-align: center
+	.top-background-image-centered
+		display: inline-block
+		vertical-align: middle
+
+	&:before
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		margin-right: -0.25em

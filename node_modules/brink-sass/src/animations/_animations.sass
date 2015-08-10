@@ -1,0 +1,61 @@
+// @mixin kf-color-attention
+//
+// changes colors linear between two colors. Placed as a global in css.
+//
+// $start	- first and last color. defaults to $font-color
+// $end		- middle color. defaults to $color-primary
+//
+// Styleguide Animations.keyframes.col-att
+
+@mixin kf-color-attention( $start: $font-color, $end: $color-primary)
+	@keyframes attention
+		0% 
+			color: $start
+		50% 
+			color: $end
+		100%
+			color: $start
+
+
+// @mixin hover-show-indicator
+//
+// adds an indicator that the element, when hovered over, will display new content. placed within the element
+// that is to be hover-shown.
+//
+// $deg	- number of degrees to rotate indicator. defaults to 180deg
+// $size - size of the indicator. defaults to 2em
+// 
+// Styleguide Animations.hover-show.hover-show-indicator
+
+// place on element that contains item to hover-show
+@mixin hover-show-indicator($deg: 180deg, $size: 2em)
+	&:before
+		content: "^"
+		margin: 0 auto
+		display: block
+		text-align: center
+		transform: rotate(#{$deg})
+		font-weight: bold
+		font-size: #{$size}
+
+// @mixin hover-show-down
+//
+// applied to parent element of el to be hover-shown. Includes the hover-show-indicator by default.
+//
+// $el	- the element to be targetted 
+// $hsd-max-height 	- max height to be animated to. Set smaller or larger to make the effect more or less pronounced.
+// $indicator-size 	- size of the indicator -> used to specifiy max height on non-active hover in order to show indicator
+// 
+// Styleguide Animations.hover-show.hover-show-down
+
+@mixin hover-show-down($el, $hsd-max-height: 500px, $indicator-size: 2em)
+	& #{$el}
+		@include hover-show-indicator(180deg, $indicator-size)
+		@include transition(all 1s cubic-bezier(0, 1, 0.5, 1))
+		overflow-y: hidden
+		opacity: 0.4
+		max-height: #{$indicator-size}
+	&:hover  > #{$el}
+		// will max out size at 500px unless parameter set, not necessarily best
+		opacity: 1
+		max-height: $hsd-max-height

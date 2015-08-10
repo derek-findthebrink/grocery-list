@@ -1,0 +1,77 @@
+// header
+//
+// header modules. A header is composed of the header element which has each:
+// children h1, x.logo, x.location
+//
+// .is-header-collapsed	- collapses on scroll
+//
+// Markup: markup/header.html
+//
+// Styleguide Modules.header
+
+// @mixin header
+//
+// default setup for header. Assumes that .location has a
+// default font-size of 1rem
+//
+// $logo	- description
+// $size	- description
+// $margin	- description
+// 
+// Styleguide Modules.header.header
+
+
+@mixin header($logo: $logo-img, $size: $logo-size, $margin: $logo-margin)
+	@include ac($color-primary)
+	@include outer-container
+	@include media($mobile)
+		overflow: hidden
+	width: 100%
+	min-height: $logo-size + 2 * $margin
+	.logo
+		@include span-columns(4 of 12)
+		@include media($mobile)
+			@include span-columns(4 of 4)
+			background-position: center
+			margin-left: 0
+		margin: $margin
+		height: $logo-size
+		background-image: $logo
+		background-size: $size $size
+		background-repeat: no-repeat
+	h1
+		@include span-columns(4 of 12)
+		@include media($mobile)
+			@include span-columns(4 of 4)
+			margin: 0
+		margin-top: $margin
+		margin-bottom: $margin
+		text-align: center
+	.location
+		@include span-columns(4 of 12)
+		@include media($mobile)
+			@include span-columns(4 of 4)
+			text-align: center
+			margin: 0
+		margin-top: $margin * 2.5
+		text-align: right
+
+
+
+// @mixin is-header-collapsed
+//
+// collapses the header into a nav and header on scroll down
+// requires javascript?
+//
+// Styleguide Modules.header.header-scroll-collapse
+
+@mixin is-header-collapsed
+	@extend header
+	@include ac(color-monotone($color-primary, 7))
+	h1, .location
+		@extend %visuallyhidden
+	.logo 
+		@include span-columns(12 of 12)
+		margin-left: 0
+		margin-right: 0
+		background-position: center

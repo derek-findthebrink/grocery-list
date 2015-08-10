@@ -1,0 +1,53 @@
+@import "../index"
+
+// display for kss
+.kss-sidebar
+	position: fixed
+	max-height: 100vh
+	overflow: scroll
+
+@media (max-width: 768px)
+	.kss-sidebar
+		position: static
+		overflow: auto
+
+
+.kss-modifier__example
+	// modules
+	.bubble
+		@include bubble
+	.bubble-round
+		@include bubble-round
+
+	nav
+		@include nav
+	.nav-horizontal
+		@include nav-horizontal
+	.nav-justified
+		@include nav-justified
+
+	header
+		@include header
+	.is-header-collapsed
+		@include is-header-collapsed
+
+	.list
+		@include list 
+	.list-pretty
+		@include list-pretty
+
+	.message 
+		@include form-message
+	.form-pretty
+		@include form-pretty
+	.form-send
+		@include is-form-sending
+	.form-success
+		@include is-form-sent
+	.form-error
+		@include is-form-error
+
+	button 
+		@include button
+	.button-themed
+		@include button-themed

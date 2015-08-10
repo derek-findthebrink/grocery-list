@@ -1,0 +1,26 @@
+// @mixin text-headline
+//
+// emphasizes text by adding quotations and some default displays to make it pop
+//
+// Styleguide Modules.text-headline
+
+
+@mixin text-headline
+	margin: 1.5em 0 1.5em 0
+	font-size: 125%
+	color: gray
+	opacity: 0.9
+	text-align: center
+	line-height: 0.7
+	&:before
+		content: "\""
+		position: relative
+		top: 15px
+		right: 10px
+		font-size: 300%
+	&:after
+		content: "\""
+		position: relative
+		top: 15px
+		left: 10px
+		font-size: 300%

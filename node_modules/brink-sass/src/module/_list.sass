@@ -1,0 +1,42 @@
+// list
+//
+// resets styles on the element back to list-specific defaults. Good for removing the cascade from mixins like 'grid', 'bubble'. Add to list items themselves.
+//
+// .list-pretty	- pretty style
+//
+// Markup: markup/list.html
+// 
+// Styleguide Modules.list
+
+
+// @mixin list
+//
+// resets element to default list item styling. apply to li
+//
+// Styleguide Modules.list.list
+
+@mixin list 
+	padding: 0
+	margin: 0
+	display: block
+	float: none
+	width: 100%
+
+// @mixin list-pretty
+//
+// includes @mixin list, but adds some nice coloring and hover effects
+//
+// Styleguide Modules.list.list-pretty
+
+@mixin list-pretty()
+	@include list
+	@include ac($color-primary)
+	padding: 0.2em
+	border-top: 1px solid $color-secondary
+	border-radius: $border-radius
+	&:last-child
+		border-bottom: 1px solid $color-secondary
+		margin-bottom: 1em
+	&:hover
+		@include ac($color-quaternary)
+

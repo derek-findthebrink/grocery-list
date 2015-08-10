@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>brink. | Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="../index.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">brink-SMACSS<br>Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./index.html">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-animations.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">Animations</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-animations.html#kssref-animations-hover-show">
+                <span class="kss-nav__ref">1.1</span
+                ><span class="kss-nav__name">Hover-Show</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-animations.html#kssref-animations-keyframes">
+                <span class="kss-nav__ref">1.2</span
+                ><span class="kss-nav__name">Keyframes</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-base.html">
+          <span class="kss-nav__ref">2</span
+          ><span class="kss-nav__name">Base</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-color.html">
+          <span class="kss-nav__ref">3</span
+          ><span class="kss-nav__name">Color</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-display.html">
+          <span class="kss-nav__ref">4</span
+          ><span class="kss-nav__name">Display</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-helpers.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Helpers</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-layout.html">
+          <span class="kss-nav__ref">6</span
+          ><span class="kss-nav__name">Layout</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-modules.html">
+          <span class="kss-nav__ref">7</span
+          ><span class="kss-nav__name">Modules</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-animations" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-animations">
+          <span class="kss-title__ref">1</span
+          >Animations
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h1>
+
+
+      <div class="kss-description">
+        <p>Code creating animations</p>
+
+      </div>
+    </div>
+
+
+      </div>
+      <section id="kssref-animations-hover-show" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-animations-hover-show">
+          <span class="kss-title__ref">1.1</span
+          >Hover-Show
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>hover-show animation</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-animations-hover-show.hover-show-down" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-animations-hover-show.hover-show-down">
+          <span class="kss-title__ref">1.1.1</span
+          >@mixin hover-show-down
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$el</code>
+          <div class="kss-parameters__description">the element to be targetted</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$hsd-max-height</code>
+          <div class="kss-parameters__description">max height to be animated to. Set smaller or larger to make the effect more or less pronounced.</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$indicator-size</code>
+          <div class="kss-parameters__description">size of the indicator -&gt; used to specifiy max height on non-active hover in order to show indicator</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>applied to parent element of el to be hover-shown. Includes the hover-show-indicator by default.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-animations-hover-show.hover-show-indicator" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-animations-hover-show.hover-show-indicator">
+          <span class="kss-title__ref">1.1.2</span
+          >@mixin hover-show-indicator
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$deg</code>
+          <div class="kss-parameters__description">number of degrees to rotate indicator. defaults to 180deg</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$size</code>
+          <div class="kss-parameters__description">size of the indicator. defaults to 2em</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>adds an indicator that the element, when hovered over, will display new content. placed within the element
+that is to be hover-shown.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-animations-keyframes" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-animations-keyframes">
+          <span class="kss-title__ref">1.2</span
+          >Keyframes
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Code establishing keyframes.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-animations-keyframes.col-att" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-animations-keyframes.col-att">
+          <span class="kss-title__ref">1.2.1</span
+          >@mixin kf-color-attention
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$start</code>
+          <div class="kss-parameters__description">first and last color. defaults to $font-color</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$end</code>
+          <div class="kss-parameters__description">middle color. defaults to $color-primary</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>changes colors linear between two colors. Placed as a global in css.</p>
+
+      </div>
+    </div>
+
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+<script src="../jquery.min.js"></script>
+<script src="../bundle.js"></script>
+
+
+<script src="//use.typekit.net/rsz1its.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

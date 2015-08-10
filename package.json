@@ -1,0 +1,18 @@
+{
+  "name": "grocerylist",
+  "version": "1.0.0",
+  "description": "grocery listing app for cordova",
+  "main": "www/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd www && browser-sync start --server --files '**/*.html, **/*.js, **/*.css'",
+    "sass": "sass -wc dev/sass/index.sass:www/css/index.css"
+  },
+  "author": "derek moore",
+  "license": "MIT",
+  "devDependencies": {
+    "brink-sass": "^0.1.17"
+  },
+  "dependencies": {
+  }
+}

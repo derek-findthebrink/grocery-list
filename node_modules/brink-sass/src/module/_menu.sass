@@ -1,0 +1,37 @@
+// @mixin menu
+//
+// creates a menu with hidden nested lists -> hover show to display
+//
+// Styleguide Modules.menu
+
+
+
+// creates a menu with hidden nested lists -> hover show to display
+@mixin menu
+	width: 100%
+	position: relative
+	ul, ol
+		margin: 0 auto 0 auto
+		padding: 0
+		width: 100%
+		text-align: justify
+		li
+			position: relative
+			display: inline-block
+			vertical-align: top
+			text-align: left
+			list-style-type: none
+			padding-right: 1em
+		ul, ol
+			position: absolute
+			top: 1em
+			left: 0
+			display: none
+			padding: 0
+			margin: 0
+			list-style-type: none
+			li 
+				padding: 0.1em
+				display: block
+	li:hover > ul
+		display: block

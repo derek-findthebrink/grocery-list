@@ -1,0 +1,44 @@
+// bubble
+//
+// creates a sort of hovering section of delight
+// 
+// .bubble 	- default styling
+// .bubble-round 	- round bubble
+//
+// Markup: markup/bubbles.html
+// 
+// Styleguide Modules.bubble
+
+// @mixin bubble
+//
+// creates a bubble of content that hovers above the page. good for placing in grids. Works best with ul. Add to child elements themselves.
+//
+// $bubble-margin-bottom	- margin to add at the bottom of the bubble
+// 
+// Styleguide Modules.bubble.bubble
+
+
+@mixin bubble($color: white, $bubble-margin-bottom: 0)
+	@include dropShadow(color-monotone($color-primary, 3))
+	@include ac($color)
+	position: relative
+	display: inline-block
+	padding: 1em
+	margin-bottom: $bubble-margin-bottom
+	border-radius: $border-radius
+	overflow: hidden
+	text-align: center
+	.glyph
+		margin: 0 auto
+
+// @mixin bubble-round
+//
+// same as the bubble, only this time the border radius is set at 50% -> making it round. include after bubble mixin
+//
+// Styleguide Modules.bubble.bubble-round
+
+@mixin bubble-round
+	@include bubble 
+	border-radius: 50%
+	padding: 1.5em
+

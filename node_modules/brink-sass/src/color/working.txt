@@ -1,0 +1,14 @@
+purpose
+	I should be able to pick 3 colors
+		generate a complimentary color set for each color
+
+	assumptions
+		hsla is the way to go for calculations
+		contrast, brightness, saturation, hue should be mods
+		each of above has it's own vector
+			discover the vectors
+
+	path
+		first route will be to saturate and desaturate in 4 additional intervals - complete
+		second route will be to do the same with a complementary color - incomplete
+		

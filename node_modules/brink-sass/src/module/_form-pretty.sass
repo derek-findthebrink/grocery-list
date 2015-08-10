@@ -1,0 +1,111 @@
+// form
+//
+// styles for forms
+// 
+// .form-pretty	- pretty form
+// .test-form-sending 	- form that is sending
+// .test-form-success	- form that successfully sent
+// .test-form-error		- form that did not successfully send
+//
+// Markup: markup/form.html
+//
+// Styleguide Modules.form
+
+$form-sending-bgc: $color-primary !default
+$form-sent-bgc: #7ce665 !default
+$form-error-bgc: #ff6850 !default
+
+@mixin form-message
+	@include transition(all 1s)
+	@include ac($color-primary, 60%)
+	@include header-styles
+		font-weight: lighter
+		margin: 0
+		padding: 0.5em
+	@include square(100%)
+	display: none
+	z-index: 200
+	text-align: center
+
+// @mixin form-pretty
+//
+// makes a normal form into a pretty form! include in form selector
+//
+// Styleguide Modules.form.form-pretty
+
+@mixin form-pretty
+	padding: 1em 0 1em 0
+	border-radius: 5px
+	color: $color-secondary
+	label
+		font-family: $font-headers
+	input, textarea
+		margin: 5px
+		padding: 0.5em
+		border-radius: 5px
+		border: 3px solid mix($color-secondary, white, 70%)
+		background-color: $color-primary
+		font-family: $font-content
+	input:hover, textarea:hover
+		background-color: mix($color-primary, black, 90%)
+	input[type='submit']
+		@include transition(all, $animation-speed)
+		// border-color: $color-secondary
+		// background: $color-secondary
+		// color: $color-primary
+		// font-family: $font-headers
+		// &:hover
+		// 	background-color: mix(white, $color-primary, 70%)
+		// 	color: $color-secondary
+		@include button-themed($color-secondary)
+		color: $color-primary
+		&:hover 
+			color: cm($color-primary, 10)
+
+// @mixin is-form-active
+//
+// default styles for an active form
+//
+// Styleguide Modules.form.is-form-active
+@mixin is-form-active($form-message-div: message)
+	max-height: 5em
+	& label, input, textarea
+		display: none
+	.#{$form-message-div}
+		display: block
+
+
+// @mixin is-form-sending
+//
+// styles a frozen form that is in the process of being sent
+//
+// Styleguide Modules.form.is-form-sending
+
+@mixin is-form-sending
+	@include is-form-active
+	background-color: $color-primary
+		// needs javascript to disable
+
+// @mixin is-form-sent
+//
+// styles a frozen form that has been successfully sent
+//
+// Styleguide Modules.form.is-form-sent
+
+@mixin is-form-sent
+	@include is-form-active
+	background-color: $form-sent-bgc
+	.message
+		@include ac($form-sent-bgc)
+
+// @mixin is-form-error
+//
+// styles a form that was unsuccessfully sent to the server
+//
+// Styleguide Modules.form.is-form-error
+
+@mixin is-form-error
+	@include is-form-active
+	background-color: $form-error-bgc
+	.message
+		@include ac($form-error-bgc)
