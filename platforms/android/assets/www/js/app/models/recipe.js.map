@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "recipe.js",
+  "sourceRoot": "../../../..",
+  "sources": [
+    "dev/coffee/app/models/recipe.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,SAAA;AAEN,QAAA;WAAA,MAAA,GAAS,QAAQ,CAAC,KAAK,CAAC,MAAf,CAAsB;MAC9B,QAAA,EACC;QAAA,KAAA,EAAO,EAAP;QACA,GAAA,EAAK,EADL;QAEA,mBAAA,EAAqB,EAFrB;QAGA,mBAAA,EAAqB,EAHrB;OAF6B;KAAtB;EAFH,CAAP;AAAA"
+}

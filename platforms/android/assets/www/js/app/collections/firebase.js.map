@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "firebase.js",
+  "sourceRoot": "../../../..",
+  "sources": [
+    "dev/coffee/app/collections/firebase.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAA,CAAO,SAAA;AAEN,QAAA;IAAA,GAAA,GAAM;IACN,GAAA,GAAU,IAAA,QAAA,CAAS,GAAT;AAEV,WAAO;MACN,GAAA,EAAK,GADC;MAEN,GAAA,EAAK,GAFC;;EALD,CAAP;AAAA"
+}
